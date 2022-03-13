@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: proj2
+-- Host: 127.0.0.1    Database: proj2
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -23,9 +23,9 @@ DROP TABLE IF EXISTS `tot_death_table`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tot_death_table` (
-  `Total Deaths` double DEFAULT NULL,
-  `Death Rate per 100000` double DEFAULT NULL,
-  `State_Code` text
+  `State_Code` text,
+  `Total_Deaths` double DEFAULT NULL,
+  `Death_Rate_per_100000` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -35,7 +35,7 @@ CREATE TABLE `tot_death_table` (
 
 LOCK TABLES `tot_death_table` WRITE;
 /*!40000 ALTER TABLE `tot_death_table` DISABLE KEYS */;
-INSERT INTO `tot_death_table` VALUES (18832,384,'AL'),(1168,159,'AK'),(28090,385,'AZ'),(10836,359,'AR'),(86185,218,'CA'),(11840,205,'CO'),(10615,297,'CT'),(2753,282,'DE'),(1326,187,'DC'),(71853,334,'FL'),(36129,340,'GA'),(1342,94,'HI'),(4814,269,'ID'),(37271,294,'IL'),(23126,343,'IN'),(9262,293,'IA'),(8003,274,'KS'),(14259,319,'KY'),(16862,362,'LA'),(2142,159,'ME'),(14237,235,'MD'),(23732,344,'MA'),(35162,352,'MI'),(12455,220,'MN'),(12247,411,'MS'),(19347,315,'MO'),(3221,301,'MT'),(4026,208,'NE'),(9895,321,'NV'),(2414,177,'NH'),(33067,372,'NJ'),(7040,335,'NM'),(27090,245,'NY'),(22892,218,'NC'),(2223,291,'ND'),(37212,318,'OH'),(13513,341,'OK'),(6854,162,'OR'),(43767,341,'PA'),(3421,322,'RI'),(17332,336,'SC'),(2848,321,'SD'),(24853,363,'TN'),(84780,292,'TX'),(4518,140,'UT'),(578,92,'VT'),(19212,225,'VA'),(12133,159,'WA'),(6544,365,'WV'),(13662,234,'WI'),(1749,302,'WY');
+INSERT INTO `tot_death_table` VALUES ('AL',18832,384),('AK',1168,159),('AZ',28090,385),('AR',10836,359),('CA',86185,218),('CO',11840,205),('CT',10615,297),('DE',2753,282),('DC',1326,187),('FL',71853,334),('GA',36129,340),('HI',1342,94),('ID',4814,269),('IL',37271,294),('IN',23126,343),('IA',9262,293),('KS',8003,274),('KY',14259,319),('LA',16862,362),('ME',2142,159),('MD',14237,235),('MA',23732,344),('MI',35162,352),('MN',12455,220),('MS',12247,411),('MO',19347,315),('MT',3221,301),('NE',4026,208),('NV',9895,321),('NH',2414,177),('NJ',33067,372),('NM',7040,335),('NY',27090,245),('NC',22892,218),('ND',2223,291),('OH',37212,318),('OK',13513,341),('OR',6854,162),('PA',43767,341),('RI',3421,322),('SC',17332,336),('SD',2848,321),('TN',24853,363),('TX',84780,292),('UT',4518,140),('VT',578,92),('VA',19212,225),('WA',12133,159),('WV',6544,365),('WI',13662,234),('WY',1749,302);
 /*!40000 ALTER TABLE `tot_death_table` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -48,4 +48,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-13  0:11:45
+-- Dump completed on 2022-03-13  0:33:50

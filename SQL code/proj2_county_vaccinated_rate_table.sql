@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.28, for Win64 (x86_64)
 --
--- Host: localhost    Database: proj2
+-- Host: 127.0.0.1    Database: proj2
 -- ------------------------------------------------------
 -- Server version	8.0.28
 
@@ -24,12 +24,12 @@ DROP TABLE IF EXISTS `county_vaccinated_rate_table`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `county_vaccinated_rate_table` (
   `County` text,
-  `County of Residence Reporting Completeness` double DEFAULT NULL,
-  `Percent of total population fully vaccinated` double DEFAULT NULL,
-  `Percent of 5+ pop fully vaccinated` double DEFAULT NULL,
-  `Percent of 12+ pop fully vaccinated` double DEFAULT NULL,
-  `Percent of 18+ pop fully vaccinated` double DEFAULT NULL,
-  `Percent of 65+ pop fully vaccinated` double DEFAULT NULL
+  `County_of_Residence_Reporting_Completeness` double DEFAULT NULL,
+  `Percent_of_total_population_fully_vaccinated` double DEFAULT NULL,
+  `Percent_of_5+pop_fully_vaccinated` double DEFAULT NULL,
+  `Percent_of_12+pop_fully_vaccinated` double DEFAULT NULL,
+  `Percent_of_18+pop_fully_vaccinated` double DEFAULT NULL,
+  `Percent_of_65+pop_fully_vaccinated` double DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-13  0:11:45
+-- Dump completed on 2022-03-13  0:33:50
